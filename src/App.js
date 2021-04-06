@@ -6,6 +6,8 @@ import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './pages/Reports';
 import AddProducts from './pages/AddProducts';
 import AllProducts from './pages/AllProducts';
 import ViewProducts from './pages/ViewProducts';
+import AllOrders from './pages/AllOrders';
+import ViewOrder from './pages/ViewOrder';
 import Team from './pages/Team';
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
 		<Router>
 			<Sidebar />
 			<Switch>
-				<Route path="/overview" exact component={Overview} />
+				<Route path="/" exact component={Overview} />
 				<Route path="/reports" exact component={Reports} />
 				<Route path="/products/add" exact component={AddProducts} />
 				<Route path="/products/all" exact component={AllProducts} />
@@ -21,7 +23,9 @@ function App() {
 				<Route path="/reports/reports1" exact component={ReportsOne} />
 				<Route path="/reports/reports2" exact component={ReportsTwo} />
 				<Route path="/reports/reports3" exact component={ReportsThree} />
-				<Route path="/team" exact component={Team} />
+				<Route path="/order/:orderId" exact component={ViewOrder} />
+				<Route path="/orders/all" exact component={AllOrders} />
+				<Route path="/user/all" exact component={Team} />
 			</Switch>
 		</Router>
 	);

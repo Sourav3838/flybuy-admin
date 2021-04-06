@@ -63,8 +63,13 @@ export const SidebarData = [
 		icon: <FaIcons.FaCartPlus />,
 	},
 	{
-		title: 'Team',
-		path: '/team',
+		title: 'All Orders',
+		path: '/orders/all',
+		icon: <FaIcons.FaCartPlus />,
+	},
+	{
+		title: 'Users',
+		path: '/user/all',
 		icon: <IoIcons.IoMdPeople />,
 	},
 	{
