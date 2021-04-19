@@ -73,8 +73,8 @@ export const SidebarData = [
 		icon: <IoIcons.IoMdPeople />,
 	},
 	{
-		title: 'Messages',
-		path: '/messages',
+		title: 'Retailers',
+		path: '/retailers/all',
 		icon: <FaIcons.FaEnvelopeOpenText />,
 
 		iconClosed: <RiIcons.RiArrowDownSFill />,

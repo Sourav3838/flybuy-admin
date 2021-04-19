@@ -9,6 +9,8 @@ import ViewProducts from './pages/ViewProducts';
 import AllOrders from './pages/AllOrders';
 import ViewOrder from './pages/ViewOrder';
 import Team from './pages/Team';
+import Retailers from './pages/Retailers';
+import ViewRetailer from './pages/ViewRetailer';
 
 function App() {
 	return (
@@ -26,6 +28,9 @@ function App() {
 				<Route path="/order/:orderId" exact component={ViewOrder} />
 				<Route path="/orders/all" exact component={AllOrders} />
 				<Route path="/user/all" exact component={Team} />
+				<Route exact path="/retailers/all" exact component={Retailers} />
+				<Route path="/retailers/all" exact component={Retailers} />
+				<Route path="/retailer/:retailerId" exact component={ViewRetailer} />
 			</Switch>
 		</Router>
 	);
