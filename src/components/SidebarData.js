@@ -5,57 +5,57 @@ import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
 
 export const SidebarData = [
-	{
-		title: 'Overview',
-		path: '/overview',
-		icon: <AiIcons.AiFillHome />,
-		iconClosed: <RiIcons.RiArrowDownSFill />,
-		iconOpened: <RiIcons.RiArrowUpSFill />,
+	// {
+	// 	title: 'Overview',
+	// 	path: '/overview',
+	// 	icon: <AiIcons.AiFillHome />,
+	// 	iconClosed: <RiIcons.RiArrowDownSFill />,
+	// 	iconOpened: <RiIcons.RiArrowUpSFill />,
 
-		subNav: [
-			{
-				title: 'Users',
-				path: '/overview/users',
-				icon: <IoIcons.IoIosPaper />,
-			},
-			{
-				title: 'Revenue',
-				path: '/overview/revenue',
-				icon: <IoIcons.IoIosPaper />,
-			},
-		],
-	},
-	{
-		title: 'Reports',
-		path: '/reports',
-		icon: <IoIcons.IoIosPaper />,
-		iconClosed: <RiIcons.RiArrowDownSFill />,
-		iconOpened: <RiIcons.RiArrowUpSFill />,
+	// 	subNav: [
+	// 		{
+	// 			title: 'Users',
+	// 			path: '/overview/users',
+	// 			icon: <IoIcons.IoIosPaper />,
+	// 		},
+	// 		{
+	// 			title: 'Revenue',
+	// 			path: '/overview/revenue',
+	// 			icon: <IoIcons.IoIosPaper />,
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	title: 'Reports',
+	// 	path: '/reports',
+	// 	icon: <IoIcons.IoIosPaper />,
+	// 	iconClosed: <RiIcons.RiArrowDownSFill />,
+	// 	iconOpened: <RiIcons.RiArrowUpSFill />,
 
-		subNav: [
-			{
-				title: 'Reports',
-				path: '/reports/reports1',
-				icon: <IoIcons.IoIosPaper />,
-				cName: 'sub-nav',
-			},
-			{
-				title: 'Reports 2',
-				path: '/reports/reports2',
-				icon: <IoIcons.IoIosPaper />,
-				cName: 'sub-nav',
-			},
-			{
-				title: 'Reports 3',
-				path: '/reports/reports3',
-				icon: <IoIcons.IoIosPaper />,
-			},
-		],
-	},
+	// 	subNav: [
+	// 		{
+	// 			title: 'Reports',
+	// 			path: '/reports/reports1',
+	// 			icon: <IoIcons.IoIosPaper />,
+	// 			cName: 'sub-nav',
+	// 		},
+	// 		{
+	// 			title: 'Reports 2',
+	// 			path: '/reports/reports2',
+	// 			icon: <IoIcons.IoIosPaper />,
+	// 			cName: 'sub-nav',
+	// 		},
+	// 		{
+	// 			title: 'Reports 3',
+	// 			path: '/reports/reports3',
+	// 			icon: <IoIcons.IoIosPaper />,
+	// 		},
+	// 	],
+	// },
 	{
 		title: 'Add Products',
 		path: '/products/add',
-		icon: <FaIcons.FaCartPlus />,
+		icon: <IoIcons.IoIosPaper />,
 	},
 	{
 		title: 'All Products',
@@ -65,7 +65,7 @@ export const SidebarData = [
 	{
 		title: 'All Orders',
 		path: '/orders/all',
-		icon: <FaIcons.FaCartPlus />,
+		icon: <AiIcons.AiFillHome />,
 	},
 	{
 		title: 'Users',
@@ -77,21 +77,21 @@ export const SidebarData = [
 		path: '/retailers/all',
 		icon: <FaIcons.FaEnvelopeOpenText />,
 
-		iconClosed: <RiIcons.RiArrowDownSFill />,
-		iconOpened: <RiIcons.RiArrowUpSFill />,
+		// iconClosed: <RiIcons.RiArrowDownSFill />,
+		// iconOpened: <RiIcons.RiArrowUpSFill />,
 
-		subNav: [
-			{
-				title: 'Message 1',
-				path: '/messages/message1',
-				icon: <IoIcons.IoIosPaper />,
-			},
-			{
-				title: 'Message 2',
-				path: '/messages/message2',
-				icon: <IoIcons.IoIosPaper />,
-			},
-		],
+		// subNav: [
+		// 	{
+		// 		title: 'Message 1',
+		// 		path: '/messages/message1',
+		// 		icon: <IoIcons.IoIosPaper />,
+		// 	},
+		// 	{
+		// 		title: 'Message 2',
+		// 		path: '/messages/message2',
+		// 		icon: <IoIcons.IoIosPaper />,
+		// 	},
+		// ],
 	},
 	{
 		title: 'Support',

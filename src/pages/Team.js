@@ -27,7 +27,7 @@ const AllUsers = () => {
 		{
 			title: 'First name',
 			dataIndex: 'first_name',
-			render: (text) => <div>INR {text}</div>,
+			render: (text) => <div>{text}</div>,
 		},
 		{
 			title: 'Last name',

@@ -39,11 +39,7 @@ const AllProducts = () => {
 			dataIndex: 'product_price',
 			render: (text) => <div>$ {text}</div>,
 		},
-		{
-			title: 'Rating',
-			dataIndex: 'product_rating',
-			render: (text) => <div> {text}</div>,
-		},
+
 		{
 			title: 'Status',
 			dataIndex: 'status',

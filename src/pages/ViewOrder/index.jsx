@@ -99,7 +99,7 @@ const ViewProducts = () => {
 			)
 			.then((response) => {
 				console.log(`response`, response);
-				const { lat, lng } = response.data.results[0]?.geometry;
+				const { lat, lng } = response.data.results[1]?.geometry;
 				const newData = {};
 				newData.latitude = lat;
 				newData.longitude = lng;
@@ -189,7 +189,7 @@ const ViewProducts = () => {
 											<Col xl={8} lg={8} md={8} sm={24} xs={24}>
 												<Card
 													className="m-3 p-12"
-													style={{ width: 300 }}
+													style={{ width: 300, height: 300 }}
 													hoverable
 													cover={
 														<img
