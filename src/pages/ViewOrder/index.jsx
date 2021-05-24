@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-expressions */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
 	Row,
 	Col,
@@ -21,6 +21,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import '../../App.css';
 import axios from '../../axios';
 import axiosAPI from 'axios';
+import SignaturePad from 'react-signature-canvas';
 import { CheckCircleFilled, CloseCircleOutlined } from '@ant-design/icons';
 
 const ViewProducts = () => {
@@ -32,6 +33,8 @@ const ViewProducts = () => {
 	const [orderData, setOrderData] = useState();
 	const [action, setAction] = useState('');
 	const [actionModel, setActionModel] = useState(false);
+	const signPag = React.useRef({ signature: {} });
+	const onClear = (index) => signPag.current[index].clear();
 	useEffect(() => {
 		if (orderData) {
 			form.setFieldsValue({
@@ -337,6 +340,8 @@ const ViewProducts = () => {
 						const data = {};
 						data.status = action;
 						data.admin_status_comment = values?.admin_status_comment;
+						data.signature = signPag.current['signature'].getTrimmedCanvas().toDataURL('image/png');
+						console.log(`data`, data);
 						verifyOrder(data);
 					}}
 				>
@@ -352,6 +357,21 @@ const ViewProducts = () => {
 					>
 						<Input placeholder="Enter status comment" size={'large'} />
 					</Form.Item>
+					<div className="formLabel">Add Signature</div>
+
+					<div className="w-full h-24 border my-2">
+						<SignaturePad
+							canvasProps={{ className: 'h-full w-full' }}
+							ref={(sign) => {
+								signPag.current.signature = sign;
+							}}
+						/>
+					</div>
+					<div className="flex justify-end">
+						<Button onClick={() => onClear('signature')} className="px-4">
+							Clear
+						</Button>
+					</div>
 					<Form.Item>
 						<Button type="primary" className="mt-4 flex" onClick={() => form?.submit()}>
 							Add comments

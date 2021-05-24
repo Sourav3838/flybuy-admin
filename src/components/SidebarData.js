@@ -94,8 +94,8 @@ export const SidebarData = [
 		// ],
 	},
 	{
-		title: 'Support',
-		path: '/support',
+		title: 'User Query',
+		path: '/query/all',
 		icon: <IoIcons.IoMdHelpCircle />,
 	},
 ];

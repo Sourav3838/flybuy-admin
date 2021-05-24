@@ -11,6 +11,7 @@ import ViewOrder from './pages/ViewOrder';
 import Team from './pages/Team';
 import Retailers from './pages/Retailers';
 import ViewRetailer from './pages/ViewRetailer';
+import AllQueries from './pages/AllQueries';
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 				<Route exact path="/retailers/all" exact component={Retailers} />
 				<Route path="/retailers/all" exact component={Retailers} />
 				<Route path="/retailer/:retailerId" exact component={ViewRetailer} />
+				<Route path="/query/all" exact component={AllQueries} />
 			</Switch>
 		</Router>
 	);
